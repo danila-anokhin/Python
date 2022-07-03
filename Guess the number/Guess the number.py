@@ -1,8 +1,12 @@
 from random import *
 
 def is_valid(n):
-    if n.isdigit() and 1 <= int(n) <= 100:
-        return True
+    if n.isdigit():
+        n = int(n)
+        if 1 <= n <= 100:
+            return True
+        else:
+            return False
     else:
         return False
 
