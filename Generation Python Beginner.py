@@ -682,6 +682,7 @@
 # from math import *
 # print(ceil(log(int(input()), 2)))
 
+
 # N - ый член арифметической прогрессии
 # a = int(input())
 # d = int(input())
