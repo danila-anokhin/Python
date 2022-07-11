@@ -681,3 +681,1682 @@
 # Тимур и его числа
 # from math import *
 # print(ceil(log(int(input()), 2)))
+
+
+# N - ый член арифметической прогрессии
+# a = int(input())
+# d = int(input())
+# n = int(input())
+# print(a + d * (n - 1))
+
+# Последовательность чисел x, 2x, 3x, 4x, 5x разделённых тремя черточками
+# x = int(input())
+# print(x, 2 * x, 3 * x, 4 * x, 5 * x, sep='---')
+
+# Геометрическая прогрессия
+# b = int(input())
+# q = int(input())
+# n = int(input())
+# print(b * q ** (n - 1))
+
+# Расстояние в метрах
+# x = int(input())
+# print(x // 100)
+
+# Мандарины
+# x = int(input())
+# y = int(input())
+# print(y // x)
+# print(y % x)
+
+# Сама неотвратимость
+# n = int(input())
+# print((n // -2) * -1)
+
+# Номер купе
+# x = int(input())
+# print(1 + (x - 1) // 4)
+
+# Пересчет временного интервала
+# x = int(input())
+# print(x, 'мин', '-', 'это', x // 60, 'час', x % 60, 'минут.')
+
+# Трехзначное число
+# Напишите программу, в которой рассчитывается сумма и произведение цифр положительного трёхзначного числа.
+# x = int(input())
+# print('Сумма цифр =', x % 10 + x // 100 + x // 10 % 10)
+# print('Произведение цифр =', (x % 10) * (x // 100) * (x // 10 % 10))
+
+# Перестановка цифр
+# a = int(input())
+# b = a // 10 % 10
+# c = a % 10
+# a = a // 100
+# print(a, b, c, sep='')
+# print(a, c, b, sep='')
+# print(b, a, c, sep='')
+# print(b, c, a, sep='')
+# print(c, a, b, sep='')
+# print(c, b, a, sep='')
+
+# Четырёхзначное число
+# x = int(input())
+# print('Цифра в позиции тысяч равна', x // 1000)
+# print('Цифра в позиции сотен равна', x // 100 % 10)
+# print('Цифра в позиции десятков равна', x // 10 % 10)
+# print('Цифра в позиции единиц равна', x % 10)
+
+# Пароль
+# x = input()
+# y = input()
+# if x == y:
+#     print('Пароль принят')
+# else:
+#     print('Пароль не принят')
+
+# Четное или нечетное?
+# x = int(input())
+# if x % 2 == 0:
+#     print('Четное')
+# else:
+#     print('Нечетное')
+
+# Соотношение
+# x = int(input())
+# sum = x // 1000 + x % 10
+# dif = x // 100 % 10 - x // 10 % 10
+# if sum == dif:
+#     print('ДА')
+# else:
+#     print('НЕТ')
+
+# Роскомнадзор
+# x = int(input())
+# if x >= 18:
+#     print('Доступ разрешен')
+# else:
+#     print('Доступ запрещен')
+
+# Арифметическая прогрессия
+# x = int(input())
+# y = int(input())
+# z = int(input())
+# if y - x == z - y:
+#     print('YES')
+# else:
+#     print('NO')
+
+# Наименьшее из двух чисел
+# x = int(input())
+# y = int(input())
+# if x - y < 0:
+#     print(x)
+# else:
+#     print(y)
+
+# Наименьшее из четырёх чисел
+# x = int(input())
+# y = int(input())
+# z = int(input())
+# v = int(input())
+# if x > y:
+#     x = y
+# if z > v:
+#     z = v
+# if x < z:
+#     print(x)
+# else:
+#     print(z)
+
+# Возрастная группа
+# x = int(input())
+# if x <= 13:
+#     print('детство')
+# else:
+#     if 14 <= x <= 24:
+#         print('молодость')
+#     else:
+#         if 25 <= x <= 59:
+#             print('зрелость')
+#         else:
+#             print('старость')
+
+# Только +
+# x = int(input())
+# y = int(input())
+# z = int(input())
+# s = 0
+# if x > 0:
+#     s = s + x
+# if y > 0:
+#     s = s + y
+# if z > 0:
+#     s = s + z
+# print(s)
+
+# Принадлежность 1
+# x = int(input())
+# if -1 < x < 17:
+#     print("Принадлежит")
+# else:
+#     print("Не принадлежит")
+
+# Принадлежность 2
+# x = int(input())
+# if -3 >= x or x >= 7:
+#     print("Принадлежит")
+# else:
+#     print("Не принадлежит")
+
+# Принадлежность 3
+# x = int(input())
+# if -30 < x <= 2 or 7 < x <= 25:
+#     print("Принадлежит")
+# else:
+#     print("Не принадлежит")
+
+# Красивое число
+# x = int(input())
+# if 1 <= x // 1000 < 10 and (x % 7 == 0 or x % 17 == 0):
+#     print('YES')
+# else:
+#     print('NO')
+
+# Неравенство треугольника
+# x = int(input())
+# y = int(input())
+# z = int(input())
+# if x < y + z and y < x + z and z < x + y:
+#     print('YES')
+# else:
+#     print('NO')
+
+# Високосный год
+# x = int(input())
+# if (x % 4 == 0 and x % 100 != 0) or x % 400 == 0:
+#     print('YES')
+# else:
+#     print('NO')
+
+# Ход ладьи
+# x = int(input())
+# y = int(input())
+# z = int(input())
+# v = int(input())
+# if x == z or y == v:
+#     print('YES')
+# else:
+#     print('NO')
+
+# Ход короля m
+# x = int(input())
+# y = int(input())
+# z = int(input())
+# v = int(input())
+# if (z - 1 <= x <= z + 1) and (v - 1 <= y <= v + 1):
+#     print('YES')
+# else:
+#     print('NO')
+
+# Гонка спидстеров
+# n = int(input())
+# k = int(input())
+# if n > k:
+#     print('NO')
+# elif k > n:
+#     print('YES')
+# else:
+#     print("Don't know")
+
+# Вид треугольника
+# x = int(input())
+# y = int(input())
+# z = int(input())
+# if x != y and x != z and y != z:
+#     print('Разносторонний')
+# elif (x == y and x != z and y != z) or (z == y and z != x and y != x) or (z == x and z != y and z != y):
+#     print('Равнобедренный')
+# else:
+#     print('Равносторонний')
+
+# Среднее число
+# x = int(input())
+# y = int(input())
+# z = int(input())
+# if y < x < z or z < x < y:
+#     print(x)
+# elif x < y < z or z < y < x:
+#     print(y)
+# else:
+#     print(z)
+
+# Количество дней
+# x = int(input())
+# if x == 2:
+#     print(28)
+# elif (x % 2 == 0 and x < 7) or (x % 2 != 0 and x > 8):
+#     print(30)
+# else:
+#     print(31)
+
+# Церемония взвешивания
+# x = int(input())
+# if 0 <= x < 60:
+#     print('Легкий вес')
+# elif 60 <= x < 64:
+#     print('Первый полусредний вес')
+# else:
+#     print('Полусредний вес')
+
+# Самописный калькулятор
+# a = int(input())
+# b = int(input())
+# x = input()
+# if x == '+':
+#     print(a + b)
+# elif x == '-':
+#     print(a - b)
+# elif x == '*':
+#     print(a * b)
+# elif x == '/':
+#     if b != 0:
+#         print(a / b)
+#     else:
+#         print('На ноль делить нельзя!')
+# else:
+#     print('Неверная операция')
+
+# Цветовой микшер
+# a = input()
+# b = input()
+# if a == 'красный':
+#     if b == 'красный':
+#         print('красный')
+#     elif b == 'синий':
+#         print('фиолетовый')
+#     elif b == 'желтый':
+#         print('оранжевый')
+#     else:
+#         print('ошибка цвета')
+# elif a == 'желтый':
+#     if b == 'желтый':
+#         print('желтый')
+#     elif b == 'синий':
+#         print('зеленый')
+#     elif b == 'красный':
+#         print('оранжевый')
+#     else:
+#         print('ошибка цвета')
+# elif a == 'синий':
+#     if b == 'синий':
+#         print('синий')
+#     elif b == 'желтый':
+#         print('зеленый')
+#     elif b == 'красный':
+#         print('фиолетовый')
+#     else:
+#         print('ошибка цвета')
+# else:
+#     print('ошибка цвета')
+
+# Цвета колеса рулетки
+# x = int(input())
+# if x == 0:
+#     print('зеленый')
+# elif 1 <= x <= 10:
+#     if x % 2 == 0:
+#         print('черный')
+#     else:
+#         print('красный')
+# elif 11 <= x <= 18:
+#     if x % 2 == 0:
+#         print('красный')
+#     else:
+#         print('черный ')
+# elif 19 <= x <= 28:
+#     if x % 2 == 0:
+#         print('черный')
+#     else:
+#         print('красный')
+# elif 29 <= x <= 36:
+#     if x % 2 == 0:
+#         print('красный')
+#     else:
+#         print('черный')
+# else:
+#     print('ошибка ввода')
+
+# Пересечение отрезков
+# a = int(input())
+# b = int(input())
+# x = int(input())
+# y = int(input())
+# ma = max(a, x)
+# mb = min(b, y)
+# if ma == mb:
+#     print(ma)
+# elif mb > ma:
+#     print(ma, mb)
+# else:
+#     print('пустое множество')
+
+# Начало столетия
+# x = int(input())
+# if x % 100 == 0:
+#     print('YES')
+# else:
+#     print('NO')
+
+# Шахматная доска
+# a = int(input())
+# b = int(input())
+# x = int(input())
+# y = int(input())
+# if (a % 2 == 0 and b % 2 == 0) or (a % 2 != 0 and b % 2 != 0):
+#     if (x % 2 == 0 and y % 2 == 0) or (x % 2 != 0 and y % 2 != 0):
+#         print('YES')
+#     else:
+#         print('NO')
+# elif (a % 2 != 0 and b % 2 == 0) or (a % 2 == 0 and b % 2 != 0):
+#     if (x % 2 != 0 and y % 2 == 0) or (x % 2 == 0 and y % 2 != 0):
+#         print('YES')
+#     else:
+#         print('NO')
+
+# Girls only
+# x = int(input())
+# y = input()
+# if 10 <= x <= 15 and y == 'f':
+#     print('YES')
+# else:
+#     print('NO')
+
+# Римские цифры
+# x = int(input())
+# if 1 <= x <= 10:
+#     if x == 1:
+#         print('I')
+#     elif x == 2:
+#         print('II')
+#     elif x == 3:
+#         print('III')
+#     elif x == 4:
+#         print('IV')
+#     elif x == 5:
+#         print('V')
+#     elif x == 6:
+#         print('VI')
+#     elif x == 7:
+#         print('VII')
+#     elif x == 8:
+#         print('VIII')
+#     elif x == 9:
+#         print('IX')
+#     elif x == 10:
+#         print('X')
+# else:
+#     print('ошибка')
+
+# YES or NO вот в чем вопрос
+# x = int(input())
+# if x % 2 != 0:
+#     print('YES')
+# else:
+#     if 2 <= x <= 5:
+#         print('NO')
+#     elif 6 <= x <= 20:
+#         print('YES')
+#     elif x > 20:
+#         print('NO')
+
+# Ход слона
+# a = int(input())
+# b = int(input())
+# x = int(input())
+# y = int(input())
+# if abs(a - x) == abs(b - y):
+#     print('YES')
+# else:
+#     print('NO')
+
+# Ход коня
+# a = int(input())
+# b = int(input())
+# x = int(input())
+# y = int(input())
+# if abs(a - x) == 1 and abs(b - y) == 2:
+#     print('YES')
+# elif abs(a - x) == 2 and abs(b - y) == 1:
+#     print('YES')
+# else:
+#     print('NO')
+
+# Ход ферзя
+# a = int(input())
+# b = int(input())
+# x = int(input())
+# y = int(input())
+# if abs(a - x) == abs(b - y):
+#     print('YES')
+# elif a == x or b == y:
+#     print('YES')
+# else:
+#     print('NO')
+
+# Площадь треугольника
+# a = float(input())
+# b = float(input())
+# print(0.5 * a * b)
+
+# Две старушки
+# s = float(input())
+# v1 = float(input())
+# v2 = float(input())
+# print(s / (v1 + v2))
+
+# Обратное число
+# x = float(input())
+# if x == 0:
+#     print('Обратного числа не существует')
+# else:
+#     print(x ** -1)
+
+# 451 градус по Фаренгейту
+# x = float(input())
+# print(5 / 9 * (x - 32))
+
+# Dog age
+# x = int(input())
+# if x - 2 > 0:
+#     print(2 * 10.5 + (x - 2) * 4)
+# else:
+#     print(x * 10.5)
+
+# Первая цифра после точки
+# x = float(input())
+# x = int(x * 10)
+# print(x % 10)
+
+# Дробная часть
+# x = float(input())
+# print(x - int(x))
+
+# Наибольшее и наименьшее
+# x1 = int(input())
+# x2 = int(input())
+# x3 = int(input())
+# x4 = int(input())
+# x5 = int(input())
+# print('Наименьшее число =', min(x1, x2, x3, x4, x5))
+# print('Наибольшее число =', max(x1, x2, x3, x4, x5))
+
+# Сортировка трёх
+# x1 = int(input())
+# x2 = int(input())
+# x3 = int(input())
+# print(max(x1, x2, x3))
+# print((x1 + x2 + x3) - min(x1, x2, x3) - max(x1, x2, x3))
+# print(min(x1, x2, x3))
+
+# Интересное число
+# x = int(input())
+# x1 = x // 100
+# x2 = x // 10 % 10
+# x3 = x % 10
+# mx = max(x1, x2, x3)
+# mn = min(x1, x2, x3)
+# avg = x1 + x2 + x3 - mx - mn
+# if mx - mn == avg:
+#     print('Число интересное')
+# else:
+#     print('Число неинтересное')
+
+# Абсолютная сумма
+# a1 = abs(float(input()))
+# a2 = abs(float(input()))
+# a3 = abs(float(input()))
+# a4 = abs(float(input()))
+# a5 = abs(float(input()))
+# print(a1 + a2 + a3 + a4 + a5)
+
+# Манхэттенское расстояние
+# x1 = int(input())
+# x2 = int(input())
+# x3 = int(input())
+# x4 = int(input())
+# print(abs(x1 - x3) + abs(x2 - x4))
+
+# What's Your Name?
+# s1 = input()
+# s2 = input()
+# print('Hello ' + s1, s2 + '! You just delved into Python')
+
+# Футбольная команда
+# s = input()
+# print('Футбольная команда ' + s, 'имеет длину', len(s), 'символов')
+
+# Три города
+# x1 = input()
+# x2 = input()
+# x3 = input()
+# mx = max(len(x1), len(x2), len(x3))
+# mn = min(len(x1), len(x2), len(x3))
+# if len(x1) == mn:
+#     print(x1)
+# elif len(x2) == mn:
+#     print(x2)
+# else:
+#     print(x3)
+# if len(x1) == mx:
+#     print(x1)
+# elif len(x2) == mx:
+#     print(x2)
+# else:
+#     print(x3)
+
+# Арифметические строки
+# x1 = len(input())
+# x2 = len(input())
+# x3 = len(input())
+# if (2 * x1 - x2 - x3) * (2 * x2 - x1 - x3) * (2 * x3 - x1 - x2) == 0:
+#     print('YES')
+# else:
+#     print('NO')
+
+# Цвет настроения синий
+# s = input()
+# if 'синий' in s:
+#     print('YES')
+# else:
+#     print('NO')
+
+# Отдыхаем ли?
+# s = input()
+# if 'суббота' in s or 'воскресенье' in s:
+#     print('YES')
+# else:
+#     print('NO')
+
+# Корректный email
+# s = input()
+# if '@' in s and '.' in s:
+#     print('YES')
+# else:
+#     print('NO')
+
+#Евклидово расстояние
+# from math import *
+# x1 = float(input())
+# y1 = float(input())
+# x2 = float(input())
+# y2 = float(input())
+# print(sqrt(pow((x1 - x2), 2) + pow((y1 - y2), 2)))
+
+# Площадь и длина
+# from math import *
+# r = float(input())
+# print(pi * r * r)
+# print(pi * r * 2)
+
+# Средние значения
+# from math import *
+# a = float(input())
+# b = float(input())
+# print((a + b) / 2) # среднее арифметическое
+# print(sqrt(a * b)) # среднее геометрическое
+# print((2 * a * b) / (a + b)) # среднее гармоническое
+# print(sqrt((a * a + b * b) / 2)) # среднее квадратичное
+
+# Тригонометрическое выражение
+# from math import *
+# x = float(input())
+# xr = radians(x)
+# print(sin(xr) + cos(xr) + pow(tan(xr), 2))
+
+# Пол и потолок
+# from math import *
+# x = float(input())
+# print(ceil(x) + floor(x))
+
+# Квадратное уравнение
+# from math import *
+# a = float(input())
+# b = float(input())
+# c = float(input())
+# d = b * b - 4 * a * c
+# if d > 0:
+#     x1 = (-1 * b - sqrt(d)) / (2 * a)
+#     x2 = (-1 * b + sqrt(d)) / (2 * a)
+#     print(min(x1, x2))
+#     print(max(x1, x2))
+# elif d == 0:
+#     print((-1 * b) / (2 * a))
+# else:
+#     print('Нет корней')
+
+# Правильный многоугольник
+# from math import *
+# n = int(input())
+# a = float(input())
+# s = (n * a * a) / (4 * tan(pi / n))
+# print(s)
+
+# Квадрат числа
+# n = int(input())
+# for i in range(n + 1):
+#     print('Квадрат числа', i, 'равен', i * i)
+
+# Звездный треугольник
+# n = int(input())
+# s = '*'
+# for i in range(n):
+#     print(s * abs(n - i))
+
+# Популяция
+# m = int(input())
+# p = int(input())
+# n = int(input())
+# x = m
+# print(1, m)
+# for i in range(n - 1):
+#     x = x + x * (p / 100)
+#     print(i + 2, x)
+
+# Количество чисел
+# a = int(input())
+# b = int(input())
+# cnt = 0
+# for i in range(a, b + 1):
+#     if i ** 3 % 10 == 4 or i ** 3 % 10 == 9:
+#         cnt += 1
+# print(cnt)
+
+# Сумма чисел
+# n = int(input())
+# s = 0
+# for i in range (n):
+#     x = int(input())
+#     s += x
+# print(s)
+
+# Асимптотическое приближение
+# from math import *
+# n = int(input())
+# s = 1
+# for i in range(2, n + 1):
+#     s += 1 / i
+# print(s - log(n))
+
+# Сумма чисел 2
+# n = int(input())
+# s = 0
+# for i in range(1, n + 1):
+#     if i * i % 10 == 2 or i * i % 10 == 5 or i * i % 10 == 8:
+#         s += i
+# print(s)
+
+# Факториал
+# n = int(input())
+# mpn = 1
+# for i in range(1, n + 1):
+#     mpn *= i
+# print(mpn)
+
+# Без нулей
+# mpn = 1
+# for i in range(10):
+#     x = int(input())
+#     if x != 0:
+#         mpn *= x
+# print(mpn)
+
+# Сумма делителей
+# n = int(input())
+# s = 0
+# for i in range(1, n + 1):
+#     if n % i == 0:
+#         s += i
+# print(s)
+
+# Знакочередующаяся сумма
+# n = int(input())
+# s = 0
+# for i in range(1, n + 1):
+#     s += i * pow(-1, i + 1)
+# print(s)
+
+# Наибольшие числа
+# n = int(input())
+# mx = -1
+# for i in range(n):
+#     x = int(input())
+#     if x > mx:
+#         mx = x
+# print(mx)
+
+# Only even numbers
+# c = 0
+# for i in range(10):
+#     x = int(input())
+#     if x % 2 == 0:
+#         c += 1
+# if c == 10:
+#     print('YES')
+# else:
+#     print('NO')
+
+# Последовательность Фибоначчи
+# n = int(input())
+# f1 = 0
+# f2 = 1
+# for i in range(1, n + 1):
+#     print(f2, end=' ')
+#     f1, f2 = f2, f1 + f2
+
+# Численный треугольник 4
+# n = int(input())
+# for j in range(1, n + 1):
+#     for i in range(1, j * 2):
+#         if i <= j:
+#             print(i, end='')
+#         else:
+#             print(2 * j - i, end='')
+#     print()
+
+# Делители-1
+# a = int(input())
+# b = int(input())
+# s = 0
+# mx = -1
+# mxd = -1
+# for i in range(a, b + 1):
+#     for j in range(1, i + 1):
+#         if i % j == 0:
+#             s += j
+#     if s >= mx:
+#         mx = s
+#         if i > mxd:
+#             mxd = i
+#     s = 0
+# print(mxd, mx)
+
+# Цифровой корень
+# n = int(input())
+# while n > 9:
+#     s = 0
+#     while n > 0:
+#         ld = n % 10
+#         s += ld
+#         n //= 10
+#     else:
+#         n = s
+# else:
+#     print(n)
+
+# Простые числа
+# a = int(input())
+# b = int(input())
+# c = 0
+# for i in range(a, b + 1):
+#     for j in range(1, i + 1):
+#         if i % j == 0:
+#             c += 1
+#     if c <= 2:
+#         if i != 1:
+#             print(i)
+#     c = 0
+
+# В столбик 1
+# s = input()
+# for i in range(0, len(s), 2):
+#     print(s[i])
+
+# В столбик 2
+# s = input()
+# for i in range((len(s) - 1), -1, -1):
+#     print(s[i])
+
+# ФИО
+# fn = input()
+# ln = input()
+# mn = input()
+# print(ln[0], fn[0], mn[0], sep='')
+
+# Цифра 1
+# s = input()
+# sm = 0
+# for i in range(len(s)):
+#     sm += int(s[i])
+# print(sm)
+
+# Цифра 2
+# s = input()
+# for i in range(10):
+#     if str(i) in s:
+#         print('Цифра')
+#         break
+# else:
+#     print('Цифр нет')
+
+# Сколько раз?
+# s = input()
+# c1 = 0
+# c2 = 0
+# for i in range(len(s)):
+#     if s[i] == '*':
+#         c1 += 1
+#     if s[i] == '+':
+#         c2 += 1
+# print('Символ + встречается', c2, 'раз')
+# print('Символ * встречается', c1, 'раз')
+
+# Одинаковые соседи
+# s = input()
+# c = 0
+# for i in range(len(s) - 1):
+#     if s[i] == s[i + 1]:
+#         c += 1
+# print(c)
+
+# Гласные и согласные
+# s = input()
+# sg = 'ауоыиэяюёеАУОЫИЭЯЮЁЕ'
+# ss = 'бвгджзйклмнпрстфхцчшщБВГДЖЗЙКЛМНПРСТФХЦЧШЩ'
+# cg = 0
+# cs = 0
+# for i in range(len(s)):
+#     for j in range(len(sg)):
+#         if s[i] == sg[j]:
+#             cg += 1
+#     for k in range(len(ss)):
+#         if s[i] == ss[k]:
+#             cs += 1
+# print('Количество гласных букв равно', cg)
+# print('Количество согласных букв равно', cs)
+
+# Decimal to Binary
+# n = int(input())
+# s = ''
+# while n != 0:
+#     s += str(n % 2)
+#     n //= 2
+# # for i in range(len(s) - 1, -1, -1):
+# #     print(s[i], end='')
+# print(s[::-1])
+
+# Палиндром
+# s = input()
+# if s == s[::-1]:
+#     print('YES')
+# else:
+#     print('NO')
+
+# Делаем срезы 1
+# s = input()
+# print(len(s))
+# print(s * 3)
+# print(s[0])
+# print(s[:3])
+# print(s[-3:])
+# print(s[::-1])
+# print(s[1:-1])
+
+# Делаем срезы 2
+# s = input()
+# print(s[2])
+# print(s[-2])
+# print(s[:5])
+# print(s[:-2])
+# print(s[::2])
+# print(s[1::2])
+# print(s[::-1])
+# print(s[-1::-2])
+
+# Две половинки
+# from math import *
+# s = input()
+# if len(s) % 2 == 0:
+#     print(s[int(len(s) / 2):], s[:int(len(s) / 2)], sep='')
+# else:
+#     print(s[ceil(len(s) / 2):], s[:floor(len(s) / 2) + 1], sep='')
+
+# Заглавные буквы
+# s = input()
+# if s == s.title():
+#     print('YES')
+# else:
+#     print('NO')
+
+# sWAP cASE
+# print(input().swapcase())
+
+# Хороший оттенок
+# s = input().upper()
+# if 'ХОРОШ' in s:
+#     print('YES')
+# else:
+#     print('NO')
+
+# Нижний регистр
+# s = input()
+# a = 'abcdefghijklmnopqrstuvwxyz'
+# c = 0
+# for i in range(len(s)):
+#     for j in range(len(a)):
+#         if s[i] == a[j]:
+#             c += 1
+# print(c)
+
+# s = input()
+# s1 = s.upper()
+# c = 0
+# for i in range(len(s)):
+#     if s[i] != s1[i]:
+#         c += 1
+# print(c)
+
+# Количество слов
+# s = input()
+# print(s.count(' ') + 1)
+
+# Минутка генетики
+# s = input()
+# print('Аденин:', s.count('а') + s.count('А'))
+# print('Гуанин:', s.count('г') + s.count('Г'))
+# print('Цитозин:', s.count('ц') + s.count('Ц'))
+# print('Тимин:', s.count('т') + s.count('Т'))
+
+# Очень странные дела
+# n = int(input())
+# c = 0
+# for i in range(n):
+#     s = input()
+#     if s.count('11') >= 3:
+#         c += 1
+# print(c)
+
+# Количество цифр
+# s = input()
+# c = 0
+# for j in range(10):
+#     c += s.count(str(j))
+# print(c)
+
+# .com or .ru
+# s = input()
+# if s.endswith('.com') or s.endswith('.ru'):
+#     print('YES')
+# else:
+#     print('NO')
+
+# Значение функции
+# n = int(input())
+# ls = []
+# res = []
+# for i in range(n):
+#     ls.append(int(input()))
+#     res.append(ls[i] ** 2 + 2 * ls[i] + 1)
+# print(*ls, sep='\n')
+# print()
+# print(*res, sep='\n')
+
+# Remove outliers
+# n = int(input())
+# ls = []
+# res = []
+# for i in range(n):
+#     ls.append(int(input()))
+# mx = max(ls)
+# mn = min(ls)
+# for j in range(n):
+#     if ls[j] != mn and ls[j] != mx:
+#         res.append(ls[j])
+# print(*res, sep='\n')
+
+# Без дубликатов
+# n = int(input())
+# ls = []
+# for i in range(n):
+#     x = input()
+#     if x not in ls:
+#         ls.append(x)
+# print(*ls, sep='\n')
+
+# Google search - 1
+# n = int(input())
+# ls = []
+# for i in range(n):
+#     ls.append(input())
+# x = input()
+# for i in range(n):
+#     if x.upper() in ls[i].upper():
+#         print(ls[i])
+
+# Google search - 2
+# n = int(input())
+# ls = []
+# for i in range(n):
+#     ls.append(input())
+# k = int(input())
+# for
+# for i in range(n):
+#     if x.upper() in ls[i].upper():
+#         print(ls[i])
+
+# Все сразу 2
+# numbers = [8, 9, 10, 11]
+# numbers.pop(1)
+# numbers.insert(1, 17)
+# numbers.extend([4, 5, 6])
+# numbers.remove(8)
+# n_c = numbers.copy()
+# numbers.extend(n_c)
+# numbers.insert(3, 25)
+# print(numbers)
+
+# Переставить min и max
+# ls = input().split()
+# for i in range(len(ls)):
+#     ls[i] = int(ls[i])
+# mx = max(ls)
+# mn = min(ls)
+# mxi = ls.index(mx)
+# mni = ls.index(mn)
+# if mxi > mni:
+#     ls.remove(mx)
+#     ls.insert(mxi, mn)
+#     ls.remove(mn)
+#     ls.insert(mni, mx)
+# else:
+#     ls.remove(mn)
+#     ls.insert(mni, mx)
+#     ls.remove(mx)
+#     ls.insert(mxi, mn)
+# for i in range(len(ls)):
+#     ls[i] = str(ls[i])
+# print(' '.join(ls))
+
+# Количество артиклей
+# ls = input().split()
+# c = 0
+# for i in range(len(ls)):
+#     if ls[i] == 'a' or ls[i] == 'an' or ls[i] == 'the' or ls[i] == 'A' or ls[i] == 'An' or ls[i] == 'The':
+#         c += 1
+# print('Общее количество артиклей:', c)
+
+# Взлом Братства Стали
+# s = input()
+# s = s[1:]
+# n = int(s)
+# ls = []
+# res = []
+# for i in range(n):
+#     ls.append(input())
+#     for j in range(len(ls[i])):
+#         if ls[i][j] == '#':
+#             res.append(ls[i][:ls[i].index('#')].rstrip())
+#             break
+#     else:
+#         res.append(ls[i])
+# print(*res, sep='\n')
+
+# Сортировка чисел
+# ls = input().split()
+# for i in range(len(ls)):
+#     ls[i] = int(ls[i])
+# ls.sort()
+# print(*ls)
+# ls.sort(reverse=True)
+# print(*ls)
+
+# Удаление 1-х символов
+# keywords = ['False', 'True', 'None', 'and', 'with', 'as', 'assert', 'break', 'class', 'continue', 'def', 'del', 'elif', 'else', 'except', 'finally', 'try', 'for', 'from', 'global', 'if', 'import', 'in', 'is', 'lambda', 'nonlocal', 'not', 'or', 'pass', 'raise', 'return', 'while', 'yield']
+# new_keywords = [keywords[i][1:] for i in range(len(keywords))]
+# print(new_keywords)
+
+# Длины строк
+# keywords = ['False', 'True', 'None', 'and', 'with', 'as', 'assert', 'break', 'class', 'continue', 'def', 'del', 'elif', 'else', 'except', 'finally', 'try', 'for', 'from', 'global', 'if', 'import', 'in', 'is', 'lambda', 'nonlocal', 'not', 'or', 'pass', 'raise', 'return', 'while', 'yield']
+# lengths = [len(keywords[i]) for i in range(len(keywords))]
+# print(lengths)
+
+# Длина >= 5 символов
+# keywords = ['False', 'True', 'None', 'and', 'with', 'as', 'assert', 'break', 'class', 'continue', 'def', 'del', 'elif', 'else', 'except', 'finally', 'try', 'for', 'from', 'global', 'if', 'import', 'in', 'is', 'lambda', 'nonlocal', 'not', 'or', 'pass', 'raise', 'return', 'while', 'yield']
+# new_keywords = [keywords[i] for i in range(len(keywords)) if len(keywords[i]) >= 5]
+# print(new_keywords)
+
+# Палиндром
+# palindromes = [i for i in range(100, 1001) if str(i) == str(i)[::-1]]
+# print(palindromes)
+
+# Списочное выражение 1
+# ls = [i ** 2 for i in range(1, int(input()) + 1)]
+# print(*ls, sep='\n')
+
+# Списочное выражение 2
+# ls = input().split()
+# ls = [int(ls[i]) ** 3 for i in range(len(ls))]
+# print(*ls)
+
+# В одну строку 1
+# print(*input().split(), sep='\n')
+
+# В одну строку 2
+# print(*[i for i in input() if '0' <= i <= '9'] , sep='')
+
+# В одну строку 3
+# print(*[int(i) ** 2 for i in input().split() if int(i) % 2 == 0 and int(i) ** 2 % 10 != 4])
+
+# Сортировка Пузырьком по возрастанию (оптимизированная)
+# ls = input().split()
+# n = len(ls)
+# f = True
+# for i in range(n):
+#     ls[i] = int(ls[i])
+# for i in range(n - 1):
+#     f = False
+#     for j in range(n - i - 1):
+#         if ls[j] > ls[j + 1]:
+#             ls[j], ls[j + 1] = ls[j + 1], ls[j]
+#             f = True
+#     if not f:
+#         break
+# print(*ls)
+
+# Сортировка Выбором по возрастанию
+# ls = input().split()
+# n = len(ls)
+# for i in range(n):
+#     ls[i] = int(ls[i])
+# for i in range(n - 1):
+#     mxi = i
+#     for j in range(i + 1, n):
+#         if ls[j] > ls[mxi]:
+#             mxi = j
+#     if mxi != i:
+#         ls[i], ls[mxi] = ls[mxi], ls[i]
+# print(*ls)
+
+# Список четных
+# print([i for i in range(2, int(input()) + 1, 2)])
+
+# Сумма двух списков
+# ls1 = input().split()
+# ls2 = input().split()
+# res = []
+# n = len(ls1)
+# for i in range(n):
+#     ls1[i] = int(ls1[i])
+#     ls2[i] = int(ls2[i])
+#     res.append(ls1[i] + ls2[i])
+# print(*res)
+
+# Сумма чисел
+# ls = input().split()
+# for i in range(len(ls)):
+#     ls[i] = int(ls[i])
+# print(*ls, sep='+', end='=')
+# print(sum(ls))
+
+# Самый длинный
+# print(max([len(i) for i in input().split()]))
+
+# Молодежный жаргон
+# print(*[i[1:] + i[0] + 'ки' for i in input().split()])
+
+# Валидный номер
+# s = input()
+# d = s.replace('-', '')
+# ls1 = []
+# if d.isdigit():
+#     ls = s.split('-')
+#     for i in range(len(ls)):
+#         ls1.append(len(ls[i]))
+#     if (ls1 == [1, 3, 3, 4] and ls[0] == '7') or (ls1 == [3, 3, 4]):
+#         print('YES')
+#     else:
+#         print('NO')
+# else:
+#     print('NO')
+
+# Звездный прямоугольник 1
+# def draw_box():
+#     z = '*'
+#     n = 10 # ширина прямоугольника
+#     h = 14 # высота прямоугольника
+#     print(z * n)
+#     for i in range(h - 2):
+#         print(z,' ' * (n - 2), z, sep='')
+#     print(z * n)
+#
+# draw_box()
+
+# Звездный треугольник 1
+# def drow_triangle():
+#     z = '*'
+#     n = 10
+#     for i in range(1, n + 1):
+#         print(z * i)
+#
+# drow_triangle()
+
+# Звездный треугольник
+# def draw_triangle(fill, base):
+#     for i in range(base // 2 + 1):
+#         for j in range(i + 1):
+#             print(fill, end='')
+#         print()
+#     for i in range(base):
+#         j = i
+#         while j < base // 2:
+#             j += 1
+#             print(fill, end='')
+#         print()
+#
+# f = input()
+# b = int(input())
+#
+# draw_triangle(f, b)
+
+# ФИО
+# def fio(fn, ln, mn):
+#     print(ln[0].upper(), fn[0].upper(), mn[0].upper(), sep='')
+#
+# fn = input()
+# ln = input()
+# mn = input()
+#
+# fio(fn, ln, mn)
+
+# Сумма цифр
+# def print_digit_sum(n):
+#     s = 0
+#     while n != 0:
+#         s += n % 10
+#         n //= 10
+#     print(s)
+#
+# n = int(input())
+#
+# print_digit_sum(n)
+
+# Конвертер километров
+# def convert_to_miles(s):
+#     return s * 0.6214
+#
+# n = int(input())
+#
+# print(convert_to_miles(n))
+
+# Количество дней
+# def get_days(m):
+#     if m == 2:
+#         return 28
+#     elif (m % 2 == 0 and m < 7) or (m % 2 != 0 and m > 8):
+#         return 30
+#     else:
+#         return 31
+#
+# n = int(input())
+#
+# print(get_days(n))
+
+# Делители 1
+# def get_factors(num):
+#     return [i for i in range(1, num + 1) if num % i == 0]
+#
+# n = int(input())
+#
+# print(get_factors(n))
+
+# Делители 2
+# def number_of_factors(num):
+#     return (len(get_factors(num)))
+#
+# n = int(input())
+#
+# print(number_of_factors(n))
+
+# Найти всех
+# def find_all(t, s):
+#     return [i for i in range(len(t)) if t[i] == s]
+#
+# target = input()
+# symbol = input()
+#
+# print(find_all(target, symbol))
+
+# Merge lists 1
+# def merge(ls1, ls2):
+#     res = ls1 + ls2
+#     res.sort()
+#     return res
+#
+# numbers1 = [int(c) for c in input().split()]
+# numbers2 = [int(c) for c in input().split()]
+#
+# print(merge(numbers1, numbers2))
+
+# Merge lists 2
+# ls = [input() for _ in range(int(input()))]
+# res = []
+#
+# for i in range(len(ls)):
+#     tmp = ls[i].split()
+#     for j in range(len(tmp)):
+#         tmp[j] = int(tmp[j])
+#     res += tmp
+# res.sort()
+# print(*res)
+
+# Is Valid Triangle?
+# def is_valid_triangle(a, b, c):
+#     if a < b + c and b < a + c and c < a + b:
+#         return True
+#     else:
+#         return False
+#
+# x = int(input())
+# y = int(input())
+# z = int(input())
+#
+# print(is_valid_triangle(x, y, z))
+
+# Is a Number Prime?
+# def is_prime(num):
+#     c = 0
+#     for i in range(1, num + 1):
+#         if num % i == 0:
+#             c += 1
+#     if c == 2:
+#         return True
+#     else:
+#         return False
+#
+# n = int(input())
+#
+# print(is_prime(n))
+
+# Next Prime
+# def get_next_prime(num):
+#     num += 1
+#     while not is_prime(num):
+#         num += 1
+#     return num
+#
+# n = int(input())
+#
+# print(get_next_prime(n))
+
+# Good password
+# def is_password_good(password):
+#     cu = 0
+#     cl = 0
+#     cd = 0
+#     if len(password) >= 8:
+#         for i in range(len(password)):
+#             if password[i].isalpha() and password[i] == password[i].upper():
+#                 cu += 1
+#             if password[i].isalpha() and password[i] == password[i].lower():
+#                 cl += 1
+#             if password[i].isdigit():
+#                 cd += 1
+#         if cu >= 1 and cl >= 1 and cd >= 1:
+#             return True
+#         else:
+#             return False
+#     else:
+#         return False
+#
+# s = input()
+#
+# print(is_password_good(s))
+
+# Ровно в одном
+# def is_one_away(word1, word2):
+#     c = 0
+#     if len(word1) == len(word2):
+#         for i in range(len(word1)):
+#             if word1[i] == word2[i]:
+#                 c += 1
+#         if len(word1) - c == 1:
+#             return True
+#         else:
+#             return False
+#     else:
+#         return False
+#
+# w1 = input()
+# w2 = input()
+#
+# print(is_one_away(w1, w2))
+
+# Палиндром
+# def is_palindrome(text):
+#     text = text.replace(',', '')
+#     text = text.replace('-', '')
+#     text = text.replace('.', '')
+#     text = text.replace('?', '')
+#     text = text.replace(' ', '')
+#     text = text.replace('!', '')
+#     text = text.upper()
+#     if text == text[::-1]:
+#         return True
+#     else:
+#         return False
+#
+# s = input()
+#
+# print(is_palindrome(s))
+
+# BEEGEEK
+# def is_valid_password(password):
+#     ls = [i for i in password.split(':')]
+#     c = 0
+#
+#     if len(ls) == 3:
+#         if ls[0] == ls[0][::-1]: # 1-ое палиндром
+#             c += 1
+#
+#         cp = 0 # 2-ое простое
+#         d = int(ls[1])
+#         for i in range(1, d + 1):
+#             if d % i == 0:
+#                 cp += 1
+#         if cp == 2:
+#             c += 1
+#
+#         if int(ls[2]) % 2 == 0: # 3-е четное
+#             c += 1
+#
+#         if c == 3:
+#             return True
+#         else:
+#             return False
+#     else:
+#         return False
+#
+# psw = input()
+#
+# print(is_valid_password(psw))
+
+# Правильная скобочная последовательность
+# def is_correct_bracket(text):
+#     c = 0
+#     for i in range(len(text)):
+#         if c == 0 and text[i] == ')':
+#             return False
+#         else:
+#             if text[i] == '(':
+#                 c += 1
+#             else:
+#                 c -= 1
+#
+#     if c == 0:
+#         return True
+#     else:
+#         return False
+#
+# s = input()
+#
+# print(is_correct_bracket(s))
+
+# Змеиный регистр
+# def convert_to_python_case(text):
+#     res = ''
+#     for i in range(len(text)):
+#         if i != 0 and text[i].isupper():
+#             res += '_' + text[i]
+#         else:
+#             res += text[i]
+#     return res.lower()
+#
+# s = input()
+#
+# print(convert_to_python_case(s))
+
+# Середина отрезка
+# def get_middle_point(x1, y1, x2, y2):
+#     return (x1 + x2) / 2, (y1 + y2) / 2
+#
+# ls = [int(input()) for i in range(4)]
+#
+# x, y = get_middle_point(ls[0], ls[1], ls[2], ls[3])
+# print(x, y)
+
+# Площадь и длина
+# import math
+# def get_circle(radius):
+#     c = 2 * math.pi * radius
+#     s = math.pi * pow(radius, 2)
+#     return c, s
+#
+# r = float(input())
+#
+# length, square = get_circle(r)
+# print(length, square)
+
+# Корни уравнения
+# from math import *
+# def solve(a, b, c):
+#     d = b * b - 4 * a * c
+#     if d >= 0:
+#         x1 = (-1 * b - sqrt(d)) / (2 * a)
+#         x2 = (-1 * b + sqrt(d)) / (2 * a)
+#         return min(x1, x2), max(x1, x2)
+#
+# a, b, c = int(input()), int(input()), int(input())
+#
+# x1, x2 = solve(a, b, c)
+# print(x1, x2)
+
+# Калькулятор доставки
+# def get_shipping_cost(quantity):
+#     s = 0
+#     if quantity == 1:
+#         return 1000
+#     else:
+#         s += 1000
+#         for i in range(quantity - 1):
+#             s += 120
+#         return s
+#
+# q = int(input())
+#
+# print(get_shipping_cost(q))
+
+# Биномиальный коэффициент
+# from math import *
+# def compute_binom(n, k):
+#     return int(factorial(n) / (factorial(k) * factorial(n - k)))
+#
+# n = int(input())
+# k = int(input())
+#
+# print(compute_binom(n, k))
+
+# Число словами
+# def number_to_words(num):
+#     list_1 = ['один', 'два', 'три', 'четыре', 'пять', 'шесть', 'семь', 'восемь', 'девять', 'десять']
+#     list_11 = ['одиннадцать', 'двенадцать', 'тринадцать', 'четырнадцать', 'пятнадцать', 'шестнадцать', 'семнадцать', 'восемнадцать', 'девятнадцать']
+#     list_21 = ['двадцать', 'тридцать', 'сорок', 'пятьдесят', 'шестьдесят', 'семьдесят', 'восемьдесят', 'девяносто']
+#     if num < 11:
+#         return list_1[num - 1]
+#     elif 10 < num < 20:
+#         p = num % 10
+#         return list_11[p - 1]
+#     else:
+#         p1 = num // 10
+#         p = num % 10
+#         if p == 0:
+#             s = list_21[p1 - 2]
+#         else:
+#             s = list_21[p1 - 2] + ' ' + list_1[p - 1]
+#         return s
+#
+# n = int(input())
+#
+# print(number_to_words(n))
+
+# Искомый месяц
+# def get_month(language, number):
+#     ls_ru = ['январь', 'февраль', 'март', 'апрель', 'май', 'июнь', 'июль', 'август', 'сентябрь', 'октябрь', 'ноябрь', 'декабрь']
+#     ls_en = ['january', 'february', 'march', 'april', 'may', 'june', 'july', 'august', 'september', 'october', 'november', 'december']
+#     if language == 'ru':
+#         return ls_ru[number - 1]
+#     if language == 'en':
+#         return ls_en[number - 1]
+#
+# lan = input()
+# num = int(input())
+#
+# print(get_month(lan, num))
+
+# Магические даты
+# def is_magic(date):
+#     if int(date[0:2]) > 9: # день
+#         d = int(date[0:2])
+#     else:
+#         d = int(date[1])
+#
+#     if int(date[3:5]) > 9: # месяц
+#         m = int(date[3:5])
+#     else:
+#         m = int(date[4])
+#
+#     if int(date[8:10]) > 9: # год
+#         y = int(date[8:10])
+#     else:
+#         y = int(date[9])
+#
+#     if d * m == y:
+#         return True
+#     else:
+#         return False
+#
+# date = input()
+#
+# print(is_magic(date))
+
+# Панграммы
+# def is_pangram(text):
+#     c = 0
+#     alp = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+#     for i in range(len(text)):
+#         if text[i].lower() in alp:
+#             c += 1
+#             del alp[alp.index(text[i].lower())]
+#     if c == 26:
+#         return True
+#     else:
+#         return False
+#
+# text = input()
+#
+# print(is_pangram(text))
+
+# Звездный треугольник
+# def draw_triangle():
+#     for i in range(8):
+#         print(' ' * (8 - 1 - i) + '*' * (1 + i * 2))
+#
+# draw_triangle()
