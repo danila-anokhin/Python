@@ -2360,3 +2360,38 @@
 #         print(' ' * (8 - 1 - i) + '*' * (1 + i * 2))
 #
 # draw_triangle()
+
+# Аве, Цезарь
+def encrypt(txt, keys):
+    lowercase_letters_en = 'abcdefghijklmnopqrstuvwxyz'
+    uppercase_letters_en = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+    en = len(lowercase_letters_en)
+    res = []
+    tmp = []
+    for i in range(len(txt)):
+        tmp = txt[i].extend()
+        for k in range(len(txt[i])):
+
+            for j in range(en):
+                if txt[i][k] == uppercase_letters_en[j]:
+                    x = (j + keys[i]) % en
+                    txt[i][k] = uppercase_letters_en[x]
+                    x = 0
+                    break
+                if txt[i][k] == lowercase_letters_en[j]:
+                    x = (j + keys[i]) % en
+                    txt[i][k] = lowercase_letters_en[x]
+                    x = 0
+                    break
+    return ''.join(txt)
+
+s = input().split()
+k = []
+for x in range(len(s)):
+    k.append(0)
+for i in range(len(s)):
+    for j in range(len(s[i])):
+        if s[i][j].isalpha():
+            k[i] += 1
+
+print(encrypt(s, k))
